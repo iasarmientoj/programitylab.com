@@ -1371,7 +1371,7 @@ Pricing
   display: block;
   font-size: 15px;
   color: #7a7a7a;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .pricing-tables .item .main-blue-button {
@@ -1646,8 +1646,6 @@ Video
 /* 
 ---------------------------------------------
 contact
---------------------------------------------- 
-*/
 
 .contact-dec img {
   position: absolute;
@@ -1775,6 +1773,8 @@ form#contact button:hover {
   background-color: #03a4ed;
 }
 
+--------------------------------------------- 
+*/
 
 /* 
 ---------------------------------------------
