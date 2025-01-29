@@ -983,6 +983,11 @@ About Us Style
   color: #fff;
 }
 
+@media (max-width: 992px) {
+  .about-us .left-image {
+    display: none;
+  }
+}
 
 /* 
 ---------------------------------------------
