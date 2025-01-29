@@ -1787,7 +1787,7 @@ Footer Style
 }
 
 footer {
-  margin-top: -50px;
+  margin-top: 50px;
   z-index: 2;
   position: relative;
 }
@@ -1800,7 +1800,7 @@ footer .footer-item h4 {
 }
 
 footer .about .logo img {
-  width: 89px;
+  width: 40px;
   margin-bottom: 30px;
 }
 
