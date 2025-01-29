@@ -61,11 +61,11 @@ https://templatemo.com/tm-562-space-dynamic
             <!-- ***** Menu Start ***** -->
             <ul class="nav">
               <li class="scroll-to-section"><a href="#top">Cursos</a></li>
-              <li class="scroll-to-section"><a href="#about">Quiénes somos</a></li>
               <li class="scroll-to-section"><a href="#portfolio">Galería</a></li>
               <li class="scroll-to-section"><a href="#pricing">Precio</a></li>
+              <li class="scroll-to-section"><a href="#contact-section">Contacto</a></li>
               <!--li class="scroll-to-section"><a href="#blog">Blog</a></li--> 
-              <li class="scroll-to-section"><a href="#contact">Comunidad</a></li> 
+              <!--li class="scroll-to-section"><a href="#contact">Comunidad</a></li--> 
               <li class="scroll-to-section">
                 <div class="main-red-button">
 				  <a href="https://wa.me/573132926005?text=¡Hola!%20Quisiera%20recibir%20más%20información%20sobre%20los%20cursos%20de%20ProgramityLab." target="_blank" onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'});">Solicita información</a>
@@ -580,56 +580,56 @@ https://templatemo.com/tm-562-space-dynamic
       </div>
     </div>
   </div>
-
-  <div id="contact" class="contact-us section">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-6 align-self-center wow fadeInLeft" data-wow-duration="0.5s" data-wow-delay="0.25s">
-          <div class="section-heading">
-            <h2>Feel Free To Send Us a Message About Your Website Needs</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doer ket eismod tempor incididunt ut labore et dolores</p>
-            <div class="phone-info">
-              <h4>For any enquiry, Call Us: <span><i class="fa fa-phone"></i> <a href="#">010-020-0340</a></span></h4>
-            </div>
+  
+<div id="contact-section" class="contact-us section">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 align-self-center wow fadeInLeft" data-wow-duration="0.5s" data-wow-delay="0.25s">
+        <div class="section-heading">
+          <h2>¿Listo para llevar la creatividad de tu hijo a otro nivel?</h2>
+          <p>Si tienes dudas o quieres inscribirte, estamos aquí para ayudarte. Escríbenos y descubre cómo tu hijo puede desarrollar su propio proyecto desde cero con nuestro acompañamiento.</p>
+          <div class="phone-info">
+            <h4>Contáctanos por WhatsApp:  
+              <span><i class="fa fa-phone"></i> <a href="https://wa.me/573132926005?text=¡Hola!%20Quisiera%20recibir%20más%20información%20sobre%20los%20cursos%20de%20ProgramityLab." target="_blank">+57 313 292 6005</a></span>
+            </h4>
           </div>
         </div>
-        <div class="col-lg-6 wow fadeInRight" data-wow-duration="0.5s" data-wow-delay="0.25s">
-          <form id="contact" action="" method="post">
-            <div class="row">
-              <div class="col-lg-6">
-                <fieldset>
-                  <input type="name" name="name" id="name" placeholder="Name" autocomplete="on" required>
-                </fieldset>
-              </div>
-              <div class="col-lg-6">
-                <fieldset>
-                  <input type="surname" name="surname" id="surname" placeholder="Surname" autocomplete="on" required>
-                </fieldset>
-              </div>
-              <div class="col-lg-12">
-                <fieldset>
-                  <input type="text" name="email" id="email" pattern="[^ @]*@[^ @]*" placeholder="Your Email" required="">
-                </fieldset>
-              </div>
-              <div class="col-lg-12">
-                <fieldset>
-                  <textarea name="message" type="text" class="form-control" id="message" placeholder="Message" required=""></textarea>  
-                </fieldset>
-              </div>
-              <div class="col-lg-12">
-                <fieldset>
-                  <button type="submit" id="form-submit" class="main-button ">Send Message</button>
-                </fieldset>
-              </div>
+      </div>
+      <div class="col-lg-6 wow fadeInRight" data-wow-duration="0.5s" data-wow-delay="0.25s">
+        <form id="contact" action="https://formsubmit.co/programitylab@gmail.com" method="POST">
+          <input type="hidden" name="_captcha" value="false">
+          <div class="row">
+            <div class="col-lg-12">
+              <fieldset>
+                <input type="text" name="name" id="name" placeholder="Nombre" autocomplete="on" required>
+              </fieldset>
             </div>
-            <div class="contact-dec">
-              <img src="assets/images/contact-decoration.png" alt="">
+            <div class="col-lg-12">
+              <fieldset>
+                <input type="email" name="email" id="email" placeholder="Tu Email" required>
+              </fieldset>
             </div>
-          </form>
-        </div>
+            <div class="col-lg-12">
+              <fieldset>
+                <textarea name="message" class="form-control" id="message" placeholder="Escribe tu mensaje aquí..." required></textarea>  
+              </fieldset>
+            </div>
+            <div class="col-lg-12">
+              <fieldset>
+                <button type="submit" id="form-submit" class="main-button ">Enviar Mensaje</button>
+              </fieldset>
+            </div>
+          </div>
+          <div class="contact-dec">
+            <img src="assets/images/contact-decoration.png" alt="">
+          </div>
+        </form>
       </div>
     </div>
   </div>
+</div>
+
+
   
   
   <footer>
@@ -699,5 +699,12 @@ https://templatemo.com/tm-562-space-dynamic
   <script src="assets/js/templatemo-custom.js"></script>
   <script src="assets/js/custom.js"></script>
 
+<script>
+  document.getElementById("contact").addEventListener("submit", function(event) {
+    event.preventDefault(); // Detiene el envío inmediato del formulario
+    alert("¡Gracias por tu mensaje! Pronto nos pondremos en contacto contigo.");
+    this.submit(); // Envía el formulario después de mostrar el popup
+  });
+</script>
 </body>
 </html>
