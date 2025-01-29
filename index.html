@@ -64,6 +64,7 @@ https://templatemo.com/tm-562-space-dynamic
               <li class="scroll-to-section"><a href="#portfolio">Galería</a></li>
               <li class="scroll-to-section"><a href="#pricing">Precio</a></li>
               <li class="scroll-to-section"><a href="#contact-section">Contacto</a></li>
+              <li class="scroll-to-section"><a href="#faq">Preguntas Frecuentes</a></li>
               <!--li class="scroll-to-section"><a href="#blog">Blog</a></li--> 
               <!--li class="scroll-to-section"><a href="#contact">Comunidad</a></li--> 
               <li class="scroll-to-section">
@@ -538,6 +539,108 @@ https://templatemo.com/tm-562-space-dynamic
     </div>
   </div>
   
+  
+  <div id="faq" class="faq section">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 offset-lg-2">
+        <div class="section-heading">
+          <h2>Preguntas <span>Frecuentes</span></h2>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-10 offset-lg-1">
+        <div class="faq-container">
+          <div class="faq-item">
+            <button class="faq-question">¿Necesita mi hijo experiencia previa en programación? <span class="faq-icon">+</span></button>
+            <div class="faq-answer">
+              <p>No, el curso está diseñado para principiantes. Aprenderá desde cero con nuestro acompañamiento guiado.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">¿Qué habilidades desarrollará mi hijo en el curso? <span class="faq-icon">+</span></button>
+            <div class="faq-answer">
+				<p>Aprenderá programación con Unity y C#, lógica y resolución de problemas, diseño y modelado 3D, uso de herramientas de inteligencia artificial y habilidades creativas para desarrollar sus propias ideas.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">¿Qué tipo de proyectos pueden crear los estudiantes? <span class="faq-icon">+</span></button>
+            <div class="faq-answer">
+              <p>Los estudiantes tienen libertad creativa. Pueden desarrollar videojuegos, aplicaciones interactivas o experiencias en 2D y 3D.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">¿Se entrega certificado al finalizar el curso? <span class="faq-icon">+</span></button>
+            <div class="faq-answer">
+              <p>Sí, los estudiantes reciben un certificado digital que valida su aprendizaje y la publicación de su proyecto en Play Store.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">¿Qué pasa si mi hijo no puede asistir a una clase? <span class="faq-icon">+</span></button>
+            <div class="faq-answer">
+              <p>Las sesiones quedan grabadas para que pueda revisarlas más tarde y no perder el ritmo del curso.</p>
+            </div>
+          </div>
+		  <div class="faq-item">
+			  <button class="faq-question">¿Para qué edades está dirigido el curso? <span class="faq-icon">+</span></button>
+			  <div class="faq-answer">
+				<p>El curso está diseñado para niños y adolescentes de 7 a 17 años, adaptando el contenido y la metodología a su nivel de aprendizaje.</p>
+			  </div>
+			</div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  .faq-container {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  .faq-item {
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 10px;
+  }
+  .faq-question {
+    width: 100%;
+    background: none;
+    border: none;
+    text-align: left;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #333;
+  }
+  .faq-icon {
+    font-size: 22px;
+    font-weight: bold;
+    transition: transform 0.3s ease;
+  }
+  .faq-answer {
+    display: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    color: #555;
+  }
+  .faq-item.active .faq-answer {
+    display: block;
+  }
+  .faq-item.active .faq-icon {
+    transform: rotate(45deg);
+  }
+</style>
+
+
+  
+  
+  
 <div id="contact-section" class="contact-us section">
   <div class="container">
     <div class="row">
@@ -650,5 +753,17 @@ https://templatemo.com/tm-562-space-dynamic
     this.submit(); // Envía el formulario después de mostrar el popup
   });
 </script>
+
+
+<script>
+  document.querySelectorAll(".faq-question").forEach((button) => {
+    button.addEventListener("click", () => {
+      const faqItem = button.parentElement;
+      faqItem.classList.toggle("active");
+    });
+  });
+</script>
+
+
 </body>
 </html>
