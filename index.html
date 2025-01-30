@@ -97,8 +97,8 @@ https://templatemo.com/tm-562-space-dynamic
               <li class="scroll-to-section"><a href="#blog">Cursos</a></li>
               <li class="scroll-to-section"><a href="#portfolio">Galería</a></li>
               <li class="scroll-to-section"><a href="#pricing">Precio</a></li>
-              <li class="scroll-to-section"><a href="#contact-section">Contacto</a></li>
               <li class="scroll-to-section"><a href="#faq">Preguntas Frecuentes</a></li>
+              <li class="scroll-to-section"><a href="#contact-section">Contacto</a></li>
               <!--li class="scroll-to-section"><a href="#blog">Blog</a></li--> 
               <!--li class="scroll-to-section"><a href="#contact">Comunidad</a></li--> 
               <li class="scroll-to-section">
@@ -212,292 +212,6 @@ https://templatemo.com/tm-562-space-dynamic
   </div>
   
   
-  <div id="pricing" class="pricing-tables">
-    <div class="tables-left-dec">
-      <img src="assets/images/tables-left-dec.png" alt="">
-    </div>
-    <div class="tables-right-dec">
-      <img src="assets/images/tables-right-dec.png" alt="">
-    </div>
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-6 offset-lg-3">
-          <div class="section-heading">
-            <h2>El <em>plan</em> ideal para potenciar a tus pequeños <span>creadores</span></h2>
-          </div>
-        </div>
-      </div>
-      <div class="row justify-content-center">
-        <div class="col-lg-6">
-          <div class="item first-item">
-            <h4>Plan ProgramityLab</h4>
-            <em>¡Ahorra un 5% pagando por el curso completo!</em>
-            <span>$250.000 COP/mes</span>
-            <ul>
-              <li>✅ Duración: 4 meses (1 sesión de 2 horas cada semana).</li>
-              <li>✅ Clases dinámicas con gamificación y atención personalizada.</li>
-              <li>✅ Acceso a sesiones adaptadas a las especificaciones de tu PC.</li>
-              <li>✅ Acceso a recursos exclusivos y grabaciones.</li>
-              <li>✅ Publicación del proyecto en la Play Store.</li>
-              <li>✅ Uso práctico de Unity y herramientas de IA.</li>
-              <li>✅ Certificado digital al completar el curso.</li>
-            </ul>
-                <div class="main-blue-button">
-				  <a href="https://wa.me/573132926005?text=¡Hola!%20Quisiera%20recibir%20más%20información%20sobre%20el%20Plan%20ProgramityLab%20y%20su%20valor." target="_blank" onclick="document.getElementById('contact-section').scrollIntoView({behavior: 'smooth'});">Solicita información</a>
-				</div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  
-<div id="subscribe" class="subscribe">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-12">
-        <div class="inner-content">
-          <div class="row">
-            <div class="col-lg-10 offset-lg-1">
-              <h2>Horarios disponibles</h2>
-              <div class="schedule-container">
-                <div class="select-wrapper">
-                  <select class="form-control mb-4" id="schedule-select">
-                    <option value="" disabled selected>Selecciona un horario</option>
-                    <optgroup label="Horarios de fin de semana">
-                      <option value="Sábados de 8:00 AM a 10:00 AM">Sábados 8:00 AM - 10:00 AM (12 cupos)</option>
-                      <option value="Sábados de 11:00 AM a 1:00 PM">Sábados 11:00 AM - 1:00 PM (12 cupos)</option>
-                      <option value="Sábados de 2:00 PM a 4:00 PM">Sábados 2:00 PM - 4:00 PM (12 cupos)</option>
-                    </optgroup>
-                    <optgroup label="Horarios entre semana">
-                      <option value="Lunes de 3:00 PM a 5:00 PM">Lunes 3:00 PM - 5:00 PM (12 cupos)</option>
-                      <option value="Lunes de 6:00 PM a 8:00 PM">Lunes 6:00 PM - 8:00 PM (12 cupos)</option>
-                      <option value="Martes de 3:00 PM a 5:00 PM">Martes 3:00 PM - 5:00 PM (12 cupos)</option>
-                      <option value="Martes de 6:00 PM a 8:00 PM">Martes 6:00 PM - 8:00 PM (12 cupos)</option>
-                      <option value="Miércoles de 3:00 PM a 5:00 PM">Miércoles 3:00 PM - 5:00 PM (12 cupos)</option>
-                      <option value="Miércoles de 6:00 PM a 8:00 PM">Miércoles 6:00 PM - 8:00 PM (12 cupos)</option>
-                      <option value="Jueves de 3:00 PM a 5:00 PM">Jueves 3:00 PM - 5:00 PM (12 cupos)</option>
-                      <option value="Jueves de 6:00 PM a 8:00 PM">Jueves 6:00 PM - 8:00 PM (12 cupos)</option>
-                      <option value="Viernes de 3:00 PM a 5:00 PM">Viernes 3:00 PM - 5:00 PM (12 cupos)</option>
-                      <option value="Viernes de 6:00 PM a 8:00 PM">Viernes 6:00 PM - 8:00 PM (12 cupos)</option>
-                    </optgroup>
-                  </select>
-                </div>
-                <div class="main-red-button">
-                  <a href="#pricing" onclick="checkSchedule()">Solicitar información de este horario</a>
-                </div>
-              </div>
-              <style>
-                .schedule-container {
-                  max-width: 600px;
-                  margin: 0 auto;
-                }
-                .select-wrapper {
-                  position: relative;
-                }
-                .select-wrapper::after {
-                  content: '▼';
-                  font-size: 12px;
-                  position: absolute;
-                  right: 15px;
-                  top: 50%;
-                  transform: translateY(-50%);
-                  pointer-events: none;
-                  color: #666;
-                }
-                #schedule-select {
-                  width: 100%;
-                  padding: 15px;
-                  padding-right: 35px;
-                  border: 1px solid #eee;
-                  border-radius: 5px;
-                  font-size: 16px;
-                  color: #2a2a2a;
-                  background-color: #fff;
-                  margin-bottom: 20px;
-                  appearance: none;
-                  -webkit-appearance: none;
-                  -moz-appearance: none;
-                }
-                #schedule-select option, #schedule-select optgroup {
-                  padding: 10px;
-                }
-              </style>
-              <script>
-                function checkSchedule() {
-                  const select = document.getElementById('schedule-select');
-                  if (select.value) {
-                    const mensaje = `¡Hola! Me interesa inscribir a mi hijo al curso de programación para niños en el horario de ${select.value}. Por favor, ¿Me podrían brindar más información?`;
-                    window.open(`https://wa.me/573132926005?text=${encodeURIComponent(mensaje)}`, '_blank');
-                  } else {
-                    alert('Por favor selecciona un horario');
-                  }
-                }
-              </script>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-  
-<div id="portfolio" class="our-portfolio section">
-  <div class="portfolio-left-dec">
-    <img src="assets/images/portfolio-left-dec.png" alt="">
-  </div>
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-6 offset-lg-3">
-        <div class="section-heading">
-          <h2>Proyectos de <em>nuestros</em> estudiantes</h2>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-lg-12">
-        <div class="owl-carousel owl-portfolio">
-          <div class="item">
-            <div class="thumb">
-              <img src="assets/images/MysteryMansion.gif" alt="Mystery Mansion">
-              <div class="hover-effect">
-                <div class="inner-content">
-                  <a><h4>Mystery Mansion</h4></a>
-                  <span>Juan Sebastián, 14 años</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="item">
-            <div class="thumb">
-              <img src="assets/images/ChefDash.gif" alt="Chef Dash">
-              <div class="hover-effect">
-                <div class="inner-content">
-                  <a><h4>Chef Dash</h4></a>
-                  <span>María Paula, 12 años</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="item">
-            <div class="thumb">
-              <img src="assets/images/RoboQuest.gif" alt="RoboQuest">
-              <div class="hover-effect">
-                <div class="inner-content">
-                  <a><h4>RoboQuest</h4></a>
-                  <span>Carlos Andrés, 13 años</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="item">
-            <div class="thumb">
-              <img src="assets/images/AlienInvasion.gif" alt="Alien Invasion">
-              <div class="hover-effect">
-                <div class="inner-content">
-                  <a><h4>Alien Invasion</h4></a>
-                  <span>Luciana Isabel, 11 años</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="item">
-            <div class="thumb">
-              <img src="assets/images/JumplandAdventures.gif" alt="Jumpland Adventures">
-              <div class="hover-effect">
-                <div class="inner-content">
-                  <a><h4>Jumpland Adventures</h4></a>
-                  <span>José Miguel, 9 años</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="item">
-            <div class="thumb">
-              <img src="assets/images/RoboRacer.gif" alt="RoboRacer">
-              <div class="hover-effect">
-                <div class="inner-content">
-                  <a><h4>RoboRacer</h4></a>
-                  <span>Camila Valeria, 15 años</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="item">
-            <div class="thumb">
-              <img src="assets/images/TheWoodenBox.gif" alt="The Wooden Box">
-              <div class="hover-effect">
-                <div class="inner-content">
-                  <a><h4>The Wooden Box</h4></a>
-                  <span>Luis Ángel, 10 años</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="item">
-            <div class="thumb">
-              <img src="assets/images/FluffysAdventure.gif" alt="Fluffy’s Adventure">
-              <div class="hover-effect">
-                <div class="inner-content">
-                  <a><h4>Fluffy’s Adventure</h4></a>
-                  <span>Valentina Sofía, 8 años</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="item">
-            <div class="thumb">
-              <img src="assets/images/EnchantedForest.gif" alt="Enchanted Forest">
-              <div class="hover-effect">
-                <div class="inner-content">
-                  <a><h4>Enchanted Forest</h4></a>
-                  <span>Andrés Felipe, 14 años</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="item">
-            <div class="thumb">
-              <img src="assets/images/RunonGrass.gif" alt="Run on Grass">
-              <div class="hover-effect">
-                <div class="inner-content">
-                  <a><h4>Run on Grass</h4></a>
-                  <span>Sara Elena, 10 años</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="item">
-            <div class="thumb">
-              <img src="assets/images/TucansQuest.gif" alt="Tucan’s Quest">
-              <div class="hover-effect">
-                <div class="inner-content">
-                  <a><h4>Tucan’s Quest</h4></a>
-                  <span>Diego Alejandro, 12 años</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="item">
-            <div class="thumb">
-              <img src="assets/images/PuppyJumper.gif" alt="Puppy Jumper">
-              <div class="hover-effect">
-                <div class="inner-content">
-                  <a><h4>Puppy Jumper</h4></a>
-                  <span>Martina Elena, 9 años</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
 <div id="blog" class="our-blog section">
   <div class="container">
     <div class="row">
@@ -764,6 +478,292 @@ https://templatemo.com/tm-562-space-dynamic
     border-radius: 4px;
   }
 </style>
+
+  
+<div id="portfolio" class="our-portfolio section">
+  <div class="portfolio-left-dec">
+    <img src="assets/images/portfolio-left-dec.png" alt="">
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 offset-lg-3">
+        <div class="section-heading">
+          <h2>Proyectos de <em>nuestros</em> estudiantes</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="owl-carousel owl-portfolio">
+          <div class="item">
+            <div class="thumb">
+              <img src="assets/images/MysteryMansion.gif" alt="Mystery Mansion">
+              <div class="hover-effect">
+                <div class="inner-content">
+                  <a><h4>Mystery Mansion</h4></a>
+                  <span>Juan Sebastián, 14 años</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="thumb">
+              <img src="assets/images/ChefDash.gif" alt="Chef Dash">
+              <div class="hover-effect">
+                <div class="inner-content">
+                  <a><h4>Chef Dash</h4></a>
+                  <span>María Paula, 12 años</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="thumb">
+              <img src="assets/images/RoboQuest.gif" alt="RoboQuest">
+              <div class="hover-effect">
+                <div class="inner-content">
+                  <a><h4>RoboQuest</h4></a>
+                  <span>Carlos Andrés, 13 años</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="thumb">
+              <img src="assets/images/AlienInvasion.gif" alt="Alien Invasion">
+              <div class="hover-effect">
+                <div class="inner-content">
+                  <a><h4>Alien Invasion</h4></a>
+                  <span>Luciana Isabel, 11 años</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="thumb">
+              <img src="assets/images/JumplandAdventures.gif" alt="Jumpland Adventures">
+              <div class="hover-effect">
+                <div class="inner-content">
+                  <a><h4>Jumpland Adventures</h4></a>
+                  <span>José Miguel, 9 años</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="thumb">
+              <img src="assets/images/RoboRacer.gif" alt="RoboRacer">
+              <div class="hover-effect">
+                <div class="inner-content">
+                  <a><h4>RoboRacer</h4></a>
+                  <span>Camila Valeria, 15 años</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="thumb">
+              <img src="assets/images/TheWoodenBox.gif" alt="The Wooden Box">
+              <div class="hover-effect">
+                <div class="inner-content">
+                  <a><h4>The Wooden Box</h4></a>
+                  <span>Luis Ángel, 10 años</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="thumb">
+              <img src="assets/images/FluffysAdventure.gif" alt="Fluffy’s Adventure">
+              <div class="hover-effect">
+                <div class="inner-content">
+                  <a><h4>Fluffy’s Adventure</h4></a>
+                  <span>Valentina Sofía, 8 años</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="thumb">
+              <img src="assets/images/EnchantedForest.gif" alt="Enchanted Forest">
+              <div class="hover-effect">
+                <div class="inner-content">
+                  <a><h4>Enchanted Forest</h4></a>
+                  <span>Andrés Felipe, 14 años</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="thumb">
+              <img src="assets/images/RunonGrass.gif" alt="Run on Grass">
+              <div class="hover-effect">
+                <div class="inner-content">
+                  <a><h4>Run on Grass</h4></a>
+                  <span>Sara Elena, 10 años</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="thumb">
+              <img src="assets/images/TucansQuest.gif" alt="Tucan’s Quest">
+              <div class="hover-effect">
+                <div class="inner-content">
+                  <a><h4>Tucan’s Quest</h4></a>
+                  <span>Diego Alejandro, 12 años</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="thumb">
+              <img src="assets/images/PuppyJumper.gif" alt="Puppy Jumper">
+              <div class="hover-effect">
+                <div class="inner-content">
+                  <a><h4>Puppy Jumper</h4></a>
+                  <span>Martina Elena, 9 años</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <div id="pricing" class="pricing-tables">
+    <div class="tables-left-dec">
+      <img src="assets/images/tables-left-dec.png" alt="">
+    </div>
+    <div class="tables-right-dec">
+      <img src="assets/images/tables-right-dec.png" alt="">
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 offset-lg-3">
+          <div class="section-heading">
+            <h2>El <em>plan</em> ideal para potenciar a tus pequeños <span>creadores</span></h2>
+          </div>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-lg-6">
+          <div class="item first-item">
+            <h4>Plan ProgramityLab</h4>
+            <em>¡Ahorra un 5% pagando por el curso completo!</em>
+            <span>$250.000 COP/mes</span>
+            <ul>
+              <li>✅ Duración: 4 meses (1 sesión de 2 horas cada semana).</li>
+              <li>✅ Clases dinámicas con gamificación y atención personalizada.</li>
+              <li>✅ Acceso a sesiones adaptadas a las especificaciones de tu PC.</li>
+              <li>✅ Acceso a recursos exclusivos y grabaciones.</li>
+              <li>✅ Publicación del proyecto en la Play Store.</li>
+              <li>✅ Uso práctico de Unity y herramientas de IA.</li>
+              <li>✅ Certificado digital al completar el curso.</li>
+            </ul>
+                <div class="main-blue-button">
+				  <a href="https://wa.me/573132926005?text=¡Hola!%20Quisiera%20recibir%20más%20información%20sobre%20el%20Plan%20ProgramityLab%20y%20su%20valor." target="_blank" onclick="document.getElementById('contact-section').scrollIntoView({behavior: 'smooth'});">Solicita información</a>
+				</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+<div id="subscribe" class="subscribe">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="inner-content">
+          <div class="row">
+            <div class="col-lg-10 offset-lg-1">
+              <h2>Horarios disponibles</h2>
+              <div class="schedule-container">
+                <div class="select-wrapper">
+                  <select class="form-control mb-4" id="schedule-select">
+                    <option value="" disabled selected>Selecciona un horario</option>
+                    <optgroup label="Horarios de fin de semana">
+                      <option value="Sábados de 8:00 AM a 10:00 AM">Sábados 8:00 AM - 10:00 AM (12 cupos)</option>
+                      <option value="Sábados de 11:00 AM a 1:00 PM">Sábados 11:00 AM - 1:00 PM (12 cupos)</option>
+                      <option value="Sábados de 2:00 PM a 4:00 PM">Sábados 2:00 PM - 4:00 PM (12 cupos)</option>
+                    </optgroup>
+                    <optgroup label="Horarios entre semana">
+                      <option value="Lunes de 3:00 PM a 5:00 PM">Lunes 3:00 PM - 5:00 PM (12 cupos)</option>
+                      <option value="Lunes de 6:00 PM a 8:00 PM">Lunes 6:00 PM - 8:00 PM (12 cupos)</option>
+                      <option value="Martes de 3:00 PM a 5:00 PM">Martes 3:00 PM - 5:00 PM (12 cupos)</option>
+                      <option value="Martes de 6:00 PM a 8:00 PM">Martes 6:00 PM - 8:00 PM (12 cupos)</option>
+                      <option value="Miércoles de 3:00 PM a 5:00 PM">Miércoles 3:00 PM - 5:00 PM (12 cupos)</option>
+                      <option value="Miércoles de 6:00 PM a 8:00 PM">Miércoles 6:00 PM - 8:00 PM (12 cupos)</option>
+                      <option value="Jueves de 3:00 PM a 5:00 PM">Jueves 3:00 PM - 5:00 PM (12 cupos)</option>
+                      <option value="Jueves de 6:00 PM a 8:00 PM">Jueves 6:00 PM - 8:00 PM (12 cupos)</option>
+                      <option value="Viernes de 3:00 PM a 5:00 PM">Viernes 3:00 PM - 5:00 PM (12 cupos)</option>
+                      <option value="Viernes de 6:00 PM a 8:00 PM">Viernes 6:00 PM - 8:00 PM (12 cupos)</option>
+                    </optgroup>
+                  </select>
+                </div>
+                <div class="main-red-button">
+                  <a href="#pricing" onclick="checkSchedule()">Solicitar información de este horario</a>
+                </div>
+              </div>
+              <style>
+                .schedule-container {
+                  max-width: 600px;
+                  margin: 0 auto;
+                }
+                .select-wrapper {
+                  position: relative;
+                }
+                .select-wrapper::after {
+                  content: '▼';
+                  font-size: 12px;
+                  position: absolute;
+                  right: 15px;
+                  top: 50%;
+                  transform: translateY(-50%);
+                  pointer-events: none;
+                  color: #666;
+                }
+                #schedule-select {
+                  width: 100%;
+                  padding: 15px;
+                  padding-right: 35px;
+                  border: 1px solid #eee;
+                  border-radius: 5px;
+                  font-size: 16px;
+                  color: #2a2a2a;
+                  background-color: #fff;
+                  margin-bottom: 20px;
+                  appearance: none;
+                  -webkit-appearance: none;
+                  -moz-appearance: none;
+                }
+                #schedule-select option, #schedule-select optgroup {
+                  padding: 10px;
+                }
+              </style>
+              <script>
+                function checkSchedule() {
+                  const select = document.getElementById('schedule-select');
+                  if (select.value) {
+                    const mensaje = `¡Hola! Me interesa inscribir a mi hijo al curso de programación para niños en el horario de ${select.value}. Por favor, ¿Me podrían brindar más información?`;
+                    window.open(`https://wa.me/573132926005?text=${encodeURIComponent(mensaje)}`, '_blank');
+                  } else {
+                    alert('Por favor selecciona un horario');
+                  }
+                }
+              </script>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
 
   
   
