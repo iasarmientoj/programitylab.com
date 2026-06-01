@@ -162,7 +162,7 @@ src="https://www.facebook.com/tr?id=1533090577245563&ev=PageView&noscript=1"
               <ul>
                 <li><i class="far fa-calendar"></i> Duración: 4 meses - 16 sesiones</li>
                 <li><i class="fa fa-certificate"></i> Certificado al finalizar</li>
-                <li><i class="fa fa-clock"></i> 1 sesión de 2 horas cada semana</li>
+                <li><i class="fa fa-clock"></i> 1 sesión de 1 hora cada semana</li>
                 <li><i class="fa fa-user"></i> Edades: 8 a 10 años</li>
               </ul>
               <a ><h4>Curso práctico de desarrollo de videojuegos para pequeños</h4></a>
@@ -317,7 +317,7 @@ src="https://www.facebook.com/tr?id=1533090577245563&ev=PageView&noscript=1"
             <em>¡Ahorra un 5% pagando por el curso completo!</em>
             <span>$300.000 COP/mes</span>
             <ul>
-              <li>✅ Duración: 4 meses (1 sesión de 2 horas cada semana).</li>
+              <li>✅ Duración: 4 meses (1 sesión de 1 hora cada semana).</li>
               <li>✅ Clases dinámicas con gamificación y atención personalizada.</li>
               <li>✅ Acceso a sesiones adaptadas a las especificaciones de tu PC.</li>
               <li>✅ Acceso a recursos exclusivos y grabaciones.</li>
@@ -341,72 +341,110 @@ src="https://www.facebook.com/tr?id=1533090577245563&ev=PageView&noscript=1"
         <div class="inner-content">
           <div class="row">
             <div class="col-lg-10 offset-lg-1">
-              <h2>Horarios disponibles</h2>
-              <div class="schedule-container">
-                <div class="select-wrapper">
-<select class="form-control mb-4" id="schedule-select">
-  <option value="" disabled selected>Selecciona un horario</option>
+              <h2>Horarios y Clases Personalizadas</h2>
+              <p style="color: rgba(255,255,255,0.9); margin-bottom: 30px; font-size: 16px;">
+                Nos adaptamos al ritmo, nivel y disponibilidad de tu hijo. Diseñamos un horario totalmente a tu medida con acompañamiento individual y práctico.
+              </p>
+              
+              <div class="schedule-custom-container">
+                <div class="schedule-inputs-row">
+                  <!-- Day Preference -->
+                  <div class="select-custom-wrapper">
+                    <label>Día preferido</label>
+                    <select id="schedule-day" class="custom-select-field">
+                      <option value="Lunes a Viernes (Entre semana)">Lunes a Viernes (Entre semana)</option>
+                      <option value="Sábados">Sábados</option>
+                      <option value="Horario flexible / A convenir">Horario flexible / A convenir</option>
+                    </select>
+                  </div>
 
-  <optgroup label="8-10 años">
-    <option value="Lunes de 2:00 PM a 4:00 PM">Lunes 2:00 PM - 4:00 PM (6 cupos)</option>
-    <option value="Martes de 2:00 PM a 4:00 PM">Martes 2:00 PM - 4:00 PM (6 cupos)</option>
-    <option value="Miércoles de 2:00 PM a 4:00 PM">Miércoles 2:00 PM - 4:00 PM (6 cupos)</option>
-    <option value="Jueves de 2:00 PM a 4:00 PM">Jueves 2:00 PM - 4:00 PM (6 cupos)</option>
-    <option value="Viernes de 2:00 PM a 4:00 PM">Viernes 2:00 PM - 4:00 PM (6 cupos)</option>
-    <option value="Sábado de 8:00 AM a 10:00 AM">Sábado 9:00 AM - 11:00 AM (6 cupos)</option>
-  </optgroup>
-
-</select>
+                  <!-- Time Preference -->
+                  <div class="select-custom-wrapper">
+                    <label>Jornada preferida</label>
+                    <select id="schedule-time" class="custom-select-field">
+                      <option value="Mañana (8:00 AM - 12:00 PM)">Mañana (8:00 AM - 12:00 PM)</option>
+                      <option value="Tarde (12:00 PM - 5:00 PM)">Tarde (12:00 PM - 5:00 PM)</option>
+                      <option value="Noche (5:00 PM - 8:00 PM)">Noche (5:00 PM - 8:00 PM)</option>
+                    </select>
+                  </div>
                 </div>
-                <div class="main-red-button">
-                  <a href="#pricing" onclick="fbq('track', 'Contact'); checkSchedule()">Reserva un cupo en este horario</a>
+
+                <div class="main-red-button" style="margin-top: 25px;">
+                  <a href="#subscribe" onclick="fbq('track', 'Contact'); requestCustomSchedule()">Coordinar Horario Personalizado</a>
                 </div>
               </div>
+
               <style>
-                .schedule-container {
+                .schedule-custom-container {
                   max-width: 600px;
                   margin: 0 auto;
+                  background: rgba(255, 255, 255, 0.15);
+                  backdrop-filter: blur(10px);
+                  -webkit-backdrop-filter: blur(10px);
+                  padding: 30px;
+                  border-radius: 20px;
+                  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+                  border: 1px solid rgba(255, 255, 255, 0.2);
                 }
-                .select-wrapper {
-                  position: relative;
+                
+                .schedule-inputs-row {
+                  display: grid;
+                  grid-template-columns: repeat(2, 1fr);
+                  gap: 20px;
+                  text-align: left;
                 }
-                .select-wrapper::after {
-                  content: '▼';
-                  font-size: 12px;
-                  position: absolute;
-                  right: 15px;
-                  top: 50%;
-                  transform: translateY(-50%);
-                  pointer-events: none;
-                  color: #666;
+                
+                .select-custom-wrapper {
+                  display: flex;
+                  flex-direction: column;
+                  gap: 8px;
                 }
-                #schedule-select {
+                
+                .select-custom-wrapper label {
+                  color: #fff;
+                  font-size: 14px;
+                  font-weight: 600;
+                  text-transform: uppercase;
+                  letter-spacing: 0.5px;
+                }
+                
+                .custom-select-field {
                   width: 100%;
-                  padding: 15px;
-                  padding-right: 35px;
-                  border: 1px solid #eee;
-                  border-radius: 5px;
-                  font-size: 16px;
+                  padding: 12px 15px;
+                  border: 1px solid rgba(255, 255, 255, 0.3);
+                  border-radius: 10px;
+                  font-size: 15px;
                   color: #2a2a2a;
-                  background-color: #fff;
-                  margin-bottom: 20px;
+                  background-color: #ffffff;
+                  outline: none;
+                  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
                   appearance: none;
                   -webkit-appearance: none;
                   -moz-appearance: none;
+                  transition: all 0.3s ease;
                 }
-                #schedule-select option, #schedule-select optgroup {
-                  padding: 10px;
+                
+                .custom-select-field:focus {
+                  border-color: #ff3b2c;
+                  box-shadow: 0 0 10px rgba(255, 59, 44, 0.2);
+                }
+                
+                @media (max-width: 768px) {
+                  .schedule-inputs-row {
+                    grid-template-columns: 1fr;
+                    gap: 15px;
+                  }
                 }
               </style>
+
               <script>
-                function checkSchedule() {
-                  const select = document.getElementById('schedule-select');
-                  if (select.value) {
-                    const mensaje = `¡Hola! Me interesa inscribir a mi hijo al curso de programación para niños en el horario de ${select.value}. Por favor, ¿Me podrían brindar más información?`;
-                    window.open(`https://wa.me/573132060072?text=${encodeURIComponent(mensaje)}`, '_blank');
-                  } else {
-                    alert('Por favor selecciona un horario');
-                  }
+                function requestCustomSchedule() {
+                  const day = document.getElementById('schedule-day').value;
+                  const time = document.getElementById('schedule-time').value;
+                  
+                  const mensaje = `¡Hola! Me interesa inscribir a mi hijo al curso de programación para niños de 8 a 10 años. Quisiera coordinar un horario personalizado. Preferiría los días ${day} en la jornada de la ${time}. ¿Me podrían brindar más información?`;
+                  
+                  window.open(`https://wa.me/573132060072?text=${encodeURIComponent(mensaje)}`, '_blank');
                 }
               </script>
             </div>
